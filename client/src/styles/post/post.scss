@@ -1,0 +1,86 @@
+.Post{
+    width: 340px;
+    margin: 50px auto 0 auto;
+    text-align: left !important;
+
+
+    input{
+    display: block;
+    margin: 0 auto 25px auto;
+    min-width: 340px;
+    height: 35px;
+    font-size: 1.25rem;
+    padding-left: 10px;
+    border: none;
+    outline: none;
+    }
+    input:hover{
+        border: 2px solid rgb(117,117,117);
+        border-radius: 5px;
+    }
+    h1{
+        margin-bottom: 25px;
+    }
+
+    textarea{
+        display: block;
+        margin: 0 auto 25px auto;
+        min-width: 340px;
+        height: 300px;
+        font-size: 1.25rem;
+        padding-left: 10px;
+        padding-top: 10px;
+        border: none;
+        outline: none;
+
+    }
+    label{
+        font-size: 1.25rem;
+        color: rgb(117,117,117);
+        position: relative;
+        left: 10px;
+
+    }
+
+    textarea:hover{
+        border: 2px solid rgb(117,117,117);
+        border-radius: 5px;
+    }
+ 
+    .image-input:hover{
+        border: none;
+    }
+    button{
+        font-size: 1.25rem;
+        margin-left: 10px;
+        width: 100px;
+        height: 35px;
+        background-color: white;
+        border: 2px rgb(66, 190, 39) solid;
+        border-radius: 5px;
+        cursor: pointer;
+        
+    }
+    .add-btn{
+        border: none;
+        width: 50px;
+    }
+    .delete-btn{
+        border: none;
+        width: 50px;
+    }
+
+    .added-input{
+        width: 200px;
+    }
+    a{
+        color: rgb(66, 190, 39);
+        text-decoration: none;
+
+    }
+
+    .submit-btn{
+        margin-bottom:200px;
+        margin-top:35px;
+    }
+}

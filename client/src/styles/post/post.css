@@ -1,0 +1,89 @@
+.Post {
+  width: 340px;
+  margin: 50px auto 0 auto;
+  text-align: left !important;
+}
+
+.Post input {
+  display: block;
+  margin: 0 auto 25px auto;
+  min-width: 340px;
+  height: 35px;
+  font-size: 1.25rem;
+  padding-left: 10px;
+  border: none;
+  outline: none;
+}
+
+.Post input:hover {
+  border: 2px solid #757575;
+  border-radius: 5px;
+}
+
+.Post h1 {
+  margin-bottom: 25px;
+}
+
+.Post textarea {
+  display: block;
+  margin: 0 auto 25px auto;
+  min-width: 340px;
+  height: 300px;
+  font-size: 1.25rem;
+  padding-left: 10px;
+  padding-top: 10px;
+  border: none;
+  outline: none;
+}
+
+.Post label {
+  font-size: 1.25rem;
+  color: #757575;
+  position: relative;
+  left: 10px;
+}
+
+.Post textarea:hover {
+  border: 2px solid #757575;
+  border-radius: 5px;
+}
+
+.Post .image-input:hover {
+  border: none;
+}
+
+.Post button {
+  font-size: 1.25rem;
+  margin-left: 10px;
+  width: 100px;
+  height: 35px;
+  background-color: white;
+  border: 2px #42be27 solid;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Post .add-btn {
+  border: none;
+  width: 50px;
+}
+
+.Post .delete-btn {
+  border: none;
+  width: 50px;
+}
+
+.Post .added-input {
+  width: 200px;
+}
+
+.Post a {
+  color: #42be27;
+  text-decoration: none;
+}
+
+.Post .submit-btn {
+  margin-bottom: 200px;
+  margin-top: 35px;
+}
+/*# sourceMappingURL=post.css.map */

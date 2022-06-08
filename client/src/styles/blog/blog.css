@@ -1,0 +1,47 @@
+.Blog {
+  max-width: 720px;
+  margin: 0 auto;
+  font-weight: bold;
+}
+
+.Blog iframe {
+  width: 625px;
+  height: 393.75px;
+  margin-top: 75px;
+}
+
+.Blog h1 {
+  font-size: 2.5rem;
+  margin: 25px 0;
+}
+
+.Blog .blog-img {
+  width: 625px;
+  height: 393.75px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+.Blog .post-body {
+  font-size: 1.5rem;
+}
+
+.Blog .delete-btn {
+  width: 100px;
+  height: 35px;
+  border: 2px solid red;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  color: red;
+  background-color: white;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+.Blog .delete-btn:hover {
+  color: black;
+  background-color: red;
+}
+/*# sourceMappingURL=blog.css.map */
