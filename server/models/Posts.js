@@ -15,6 +15,10 @@ const postSchema = new mongoose.Schema(
       type: String,
       required: false,
     },
+    videoLink: {
+      type: String,
+      required: false,
+    },
     username: {
       type: String,
       required: false,

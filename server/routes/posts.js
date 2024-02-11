@@ -8,7 +8,7 @@ const {
   getAllPosts,
 } = require("../controllers/posts");
 
-router.route("/create").post(createPost);
+router.route("/").post(createPost);
 
 router.route("/:id").put(updatePost);
 

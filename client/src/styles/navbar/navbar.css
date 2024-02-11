@@ -1,3 +1,7 @@
+.NavBar {
+  margin-bottom: 25px;
+}
+
 .NavBar ul {
   display: -webkit-box;
   display: -ms-flexbox;

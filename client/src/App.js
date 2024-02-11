@@ -1,7 +1,10 @@
 import NavBar from "./components/NavBar";
-import Home from "./components/Home";
-import Blog from "./components/Blog";
-import Post from "./components/Post";
+import Home from "./pages/Home";
+import Blog from "./pages/Blog";
+import Write from "./pages/Write";
+import Contact from "./pages/Contact";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./styles/main/main.css";
 
@@ -12,7 +15,11 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/blog" element={<Blog />} />
-        <Route path="/post" element={<Post />} />
+        <Route path="/write" element={<Write />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
   );

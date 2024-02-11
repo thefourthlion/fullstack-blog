@@ -67,9 +67,9 @@ exports.deletePost = async (req, res) => {
 exports.getPost = async (req, res) => {
   try {
     const post = await Posts.findById(req.params.id);
-    res.status(200).json(post);
+    res.status(200).json([post]);
   } catch (err) {
-    res.status(402).json({ get: "failed", post: "not found" });
+    res.status(402).json(err);
   }
 };
 
@@ -91,7 +91,7 @@ exports.getAllPosts = async (req, res) => {
     } else {
       posts = await Posts.find();
     }
-    res.status(200).json({ get: "successful", post: posts });
+    res.status(200).json(posts);
   } catch (err) {
     res.status(402).json({ get: "failed", post: "not found" });
   }

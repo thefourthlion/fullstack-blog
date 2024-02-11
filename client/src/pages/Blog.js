@@ -6,17 +6,19 @@ export default function Blog() {
 
   // put all of the posts in the postList
   useEffect(() => {
-    Axios.get("http://localhost:3001/readPost").then((res) => {
+    Axios.get("http://localhost:3001/api/posts/").then((res) => {
       setPostList(res.data);
     });
   }, []);
 
   const deletePost = (id) => {
-    Axios.delete(`http://localhost:3001/delete/${id}`, {});
+    Axios.delete(`http://localhost:3001/api/posts/${id}`, {});
     setTimeout(() => {
       window.location.reload();
     }, 1000);
   };
+
+  console.log(postList);
 
   return (
     <div className="Blog">
@@ -24,16 +26,15 @@ export default function Blog() {
         return (
           <div key={val._id} className="postList">
             <iframe
-              src={"https://www.youtube.com/embed/" + val.videoLink}
+              src={`https://www.youtube.com/embed/${val.videoLink}`}
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
             ></iframe>
             <h1>{val.title}</h1>
-            <img className="blog-img" src={val.imageURL} alt="blog-header" />
-
-            <p className="post-body">{val.postBody}</p>
+            {/* <img className="blog-img" src={val.postImage} alt="blog-header" /> */}
+            <p className="post-body">{val.desc}</p>
             <button
               className="delete-btn"
               onClick={() => {
